@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird vs Monster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen">
+            <h1>Flappy Bird vs Monster</h1>
+            <p>A monster is chasing you! Collect power-ups to slow it down!</p>
+            <button id="startBtn">Start Game</button>
+            <div class="controls">
+                <p>Press SPACE or click to flap</p>
+                <p>Collect ⭐ to slow the monster and stop lightning</p>
+                <p>Dodge ⚡ lightning bolts and defeat the monster!</p>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen hidden">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            <div id="gameUI">
+                <div id="score">Score: 0</div>
+                <div id="monsterHealth">Monster Health: 100</div>
+                <div id="powerups">Power-ups: 0</div>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="gameOverScreen" class="screen hidden">
+            <h2>Game Over!</h2>
+            <p id="finalScore">Score: 0</p>
+            <button id="restartBtn">Try Again</button>
+        </div>
+
+        <!-- Victory Screen -->
+        <div id="victoryScreen" class="screen hidden">
+            <h2>The Monster is Defeated!</h2>
+            <p>Flappy Bird discovers the truth...</p>
+            <button id="continueBtn">Continue</button>
+        </div>
+
+        <!-- Revelation Screen -->
+        <div id="revelationScreen" class="screen hidden">
+            <h2>The Truth Revealed!</h2>
+            <div class="story">
+                <p>"Wait..." says Flappy Bird, looking at the defeated monster.</p>
+                <p>"You're not a monster... you're Flaplisha Bird!"</p>
+                <p>The curse is broken, and Flaplisha transforms back to her true form.</p>
+            </div>
+            <button id="proposalBtn">Save Her</button>
+        </div>
+
+        <!-- Wedding Screen -->
+        <div id="weddingScreen" class="screen hidden">
+            <h2>💕 Happily Ever After 💕</h2>
+            <div class="wedding">
+                <div class="couple">
+                    <div class="bird flappy">🐦</div>
+                    <div class="heart">💖</div>
+                    <div class="bird flaplisha">🦜</div>
+                </div>
+                <p>Flappy Bird and Flaplisha Bird get married!</p>
+                <p>They live happily ever after in the sky!</p>
+                <div class="confetti">🎉 🎊 ✨ 💕 ✨ 🎊 🎉</div>
+            </div>
+            <button id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
